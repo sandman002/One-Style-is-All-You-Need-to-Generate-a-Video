@@ -1,8 +1,10 @@
 # DynaGAN
 Conditonal video generation with style
 
-Chaning emotion mid sequence
-[![alt text](./anim/emotion_chain.gif)
+## Changing emotion mid sequence
 
-Gan inversion of motion styles
-[![alt text](./anim/fake_projected.gif)
+![alt text](./anim/emotion_chain.gif)
+
+## Gan inversion of motion styles
+
+![alt text](./anim/fake_projected.gif)
