@@ -1,5 +1,5 @@
 # DynaGAN
-Conditonal video generation with style
+Conditional video generation with style
 
 ## Changing emotion mid sequence
 
