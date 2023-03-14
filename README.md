@@ -1,4 +1,4 @@
-# DynaGAN [WIP]
+# MyVideoGeneration [WIP]
 Conditional video generation with style
 
 ## Changing emotion mid sequence
