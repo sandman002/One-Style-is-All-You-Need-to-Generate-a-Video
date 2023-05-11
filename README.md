@@ -75,3 +75,19 @@ UTD-MHAD
     |-- a1_s1_t2_color
     |-- ...
 ```
+Following is the directory structure for RAVDESS dataset.
+```
+RAVDESS
+|-- Actor_01
+    |-- 02-01-01-01-01-01-01
+        |-- frame0000.jpg
+        |-- frame0000.jpg
+        |-- ...
+    |-- 02-01-01-01-01-02-01
+    |-- 02-01-07-01-02-01-01
+    |-- ...
+|-- Actor_02
+|-- Actor_03
+|-- Actor_04
+|-- ...     
+```
