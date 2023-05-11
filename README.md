@@ -43,9 +43,6 @@ MEAD
         |-- level_2
         |-- level_3
     |-- contempt
-        |-- level_1
-        |-- level_2
-        |-- level_3
     |-- disgusted
     |-- fear
     |-- happy
