@@ -27,27 +27,28 @@ pip install opencv-python tqdm pandas scipy scikit-learn
 ## Dataset
 
 ### Structure
-`MEAD`
-|-- `M003_front`
-    |-- `angry`
-        |-- `level_1`
-            |-- `001`
-                |-- `frame0000.jpg`
-                |-- `frame0000.jpg`
-                |-- `...`
-            |-- `002`
-            |-- `003`
-            |-- `...`
-        |-- `level_2`
-        |-- `level_3`
-    |-- `contempt`
-    |-- `disgusted`
-    |-- `fear`
-    |-- `happy`
-    |-- `neutral`
-    |-- `sad`
-    |-- `surprised`
- |-- `M007_front`
- |-- `...`
-
-
+```
+MEAD
+|-- M003_front
+    |-- angry
+        |-- level_1
+            |-- 001
+                |-- frame0000.jpg
+                |-- frame0000.jpg
+                |-- ...
+            |-- 002
+            |-- 003
+            |-- ...
+        |-- level_2
+        |-- level_3
+    |-- contempt
+    |-- disgusted
+    |-- fear
+    |-- happy
+    |-- neutral
+    |-- sad
+    |-- surprised
+|-- M007_front
+|-- W019_front
+|-- ...
+```
