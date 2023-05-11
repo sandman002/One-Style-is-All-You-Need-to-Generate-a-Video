@@ -35,7 +35,7 @@ MEAD
         |-- level_1
             |-- 001
                 |-- frame0000.jpg
-                |-- frame0000.jpg
+                |-- frame0001.jpg
                 |-- ...
             |-- 002
             |-- 003
@@ -43,6 +43,9 @@ MEAD
         |-- level_2
         |-- level_3
     |-- contempt
+        |-- level_1
+        |-- level_2
+        |-- level_3
     |-- disgusted
     |-- fear
     |-- happy
@@ -60,11 +63,11 @@ UTD-MHAD
     |-- a1
         |-- a1_s2_t1_color
             |-- frame0000.jpg
-            |-- frame0000.jpg
+            |-- frame0001.jpg
             |-- ...
         |-- a1_s2_t2_color
             |-- frame0000.jpg
-            |-- frame0000.jpg
+            |-- frame0001.jpg
             |-- ...
         |-- ...
     |-- a2
@@ -72,6 +75,9 @@ UTD-MHAD
     |-- a27
 |-- val
     |-- a1_s1_t1_color
+        |-- frame0000.jpg
+        |-- frame0001.jpg
+        |-- ...
     |-- a1_s1_t2_color
     |-- ...
 ```
@@ -81,7 +87,7 @@ RAVDESS
 |-- Actor_01
     |-- 02-01-01-01-01-01-01
         |-- frame0000.jpg
-        |-- frame0000.jpg
+        |-- frame0001.jpg
         |-- ...
     |-- 02-01-01-01-01-02-01
     |-- 02-01-07-01-02-01-01
