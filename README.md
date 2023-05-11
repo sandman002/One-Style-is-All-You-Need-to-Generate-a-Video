@@ -27,6 +27,7 @@ pip install opencv-python tqdm pandas scipy scikit-learn
 ## Dataset
 
 ### Structure
+Following is the directory structure for MEAD dataset.
 ```
 MEAD
 |-- M003_front
@@ -51,4 +52,26 @@ MEAD
 |-- M007_front
 |-- W019_front
 |-- ...
+```
+Following is the directory structure for UTD-MHAD dataset.
+```
+UTD-MHAD
+|-- train
+    |-- a1
+        |-- a1_s2_t1_color
+            |-- frame0000.jpg
+            |-- frame0000.jpg
+            |-- ...
+        |-- a1_s2_t2_color
+            |-- frame0000.jpg
+            |-- frame0000.jpg
+            |-- ...
+        |-- ...
+    |-- a2
+    |-- ...
+    |-- a27
+|-- val
+    |-- a1_s1_t1_color
+    |-- a1_s1_t2_color
+    |-- ...
 ```
