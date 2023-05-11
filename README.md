@@ -104,22 +104,18 @@ RAVDESS
 - UTD-MHAD (coming soon)
 
 ## Training
-'''
+```
 python train.py --chkpath ./checkpoint_path --samplepath ./sample_path --size 128 --num_person 30 --num_classes 8 --batch 16
-
-'''
+```
 Resume training
-'''
+```
 python train.py --ckpt ./checkpoint_path/XXXX.pt --chkpath ./checkpoint_path --samplepath ./sample_path --size 128 --num_person 30 --num_classes 8 --batch 16
-
-'''
+```
 ## Generate (Inference)
-'''
+```
 python generate.py --ckpt ./checkpoint_path/XXXX.pt --savepath ./save_path --size 128 --num_person 30 --num_classes 8 
-
-'''
+```
 ## GAN-Inversion
-'''
+```
 python project.py --ckpt ./checkpoint_path/XXXX.pt --savepath ./save_path --size 128 --num_person 30 --num_classes 8 
-
-'''
+```
