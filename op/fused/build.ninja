@@ -1,0 +1,26 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda/bin/nvcc
+
+cflags = -DTORCH_EXTENSION_NAME=fused -DTORCH_API_INCLUDE_EXTENSION_H -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/TH -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /data/biocomp/manandha/anaconda3/envs/videoinr/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++11
+cuda_flags = -DTORCH_EXTENSION_NAME=fused -DTORCH_API_INCLUDE_EXTENSION_H -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/TH -isystem /users/biocomp/manandha/.local/lib/python3.6/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /data/biocomp/manandha/anaconda3/envs/videoinr/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_75,code=sm_75 --compiler-options '-fPIC' -std=c++11
+ldflags = -shared -L/usr/local/cuda/lib64 -lcudart
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  command = $nvcc $cuda_flags -c $in -o $out
+
+rule link
+  command = $cxx $in $ldflags -o $out
+
+build fused_bias_act.o: compile /import/pr_totem/sandeep/skytimelapse/op/fused_bias_act.cpp
+build fused_bias_act_kernel.cuda.o: cuda_compile /import/pr_totem/sandeep/skytimelapse/op/fused_bias_act_kernel.cu
+
+build fused.so: link fused_bias_act.o fused_bias_act_kernel.cuda.o
+
+default fused.so
+
