@@ -1,0 +1,8 @@
+place your training dataset folder here
+e.g.
+MEAD
+RAVDESS
+UTD-MHAD
+
+The provided csv training file refers to this location.
+Note that no actual training files uploaded here. See the dataset section in the readme of the main repo for the download links.
