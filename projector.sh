@@ -1,0 +1,1 @@
+python projector.py --step 5 --nframes 60 --num_person 30 --num_classes 8 --maindir ./inp/ --outputdir ./output/ --latent 256 --dyn_size 128 --re_person 7 --re_label 4 --ckpt ./ckpt/080000.pt
