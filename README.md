@@ -104,17 +104,20 @@ RAVDESS
 
 ## Training
 ```
-python train.py --chkpath ./checkpoint_path --samplepath ./sample_path --size 128 --num_person 30 --num_classes 8 --batch 16
+python train.py --chkpath ./ckpt/ --samplepath ./sample/ --batch 16 --size 128 --dyn_size 256 --latent 320 --traindata_csv ./datasets/mead_train.csv
+
 ```
 Resume training
+
+Choose the checkpoint file using --ckpt switch
 ```
-python train.py --ckpt ./checkpoint_path/XXXX.pt --chkpath ./checkpoint_path --samplepath ./sample_path --size 128 --num_person 30 --num_classes 8 --batch 16
+python train.py --ckpt ./ckpt/XXXXX.pt --chkpath ./ckpt/ --samplepath ./sample/ --batch 16 --size 128 --dyn_size 256 --latent 320 --traindata_csv ./datasets/mead_train.csv
 ```
 ## Generate (Inference)
 ```
-python generate.py --ckpt ./checkpoint_path/XXXX.pt --savepath ./save_path --size 128 --num_person 30 --num_classes 8 
+python generate.py --ckpt ./ckpt/XXXXX.pt --savepath ./sample/ --num_classes 8 --num_person 30 --frames 120 --latent 256 --dyn_size 128 --personlist 19 20 1 --actlist 0 3 1
 ```
 ## GAN-Inversion
 ```
-python project.py --ckpt ./checkpoint_path/XXXX.pt --savepath ./save_path --size 128 --num_person 30 --num_classes 8 
+python projector.py ./ckpt/XXXXX.pt --step 200 --nframes 60 --num_person 30 --num_classes 8 --maindir ./inp/ --outputdir ./output/ --latent 256 --dyn_size 128 --re_person 7 --re_label 4 
 ```
