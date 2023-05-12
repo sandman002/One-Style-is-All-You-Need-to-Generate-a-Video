@@ -98,9 +98,9 @@ RAVDESS
 ```
 
 ### Dataset download
-- MEAD (coming soon)
-- RAVDESS (coming soon)
-- UTD-MHAD (coming soon)
+- [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html)  
+- [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio)
+- [UTD-MHAD](https://personal.utdallas.edu/~kehtar/UTD-MHAD.html)
 
 ## Training
 ```
