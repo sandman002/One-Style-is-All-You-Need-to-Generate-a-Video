@@ -1,5 +1,4 @@
-# MyVideoGeneration [WIP]
-Conditional video generation with style
+# CTSVG: Conditional-Temporal-Style-Video-Generator
 
 ## Changing emotion mid sequence
 
