@@ -22,9 +22,9 @@ conda activate CTSVG
 
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 pip install opencv-python tqdm pandas
-pip install scikit-image==0.19.3 ipython #these two packs necessary for GAN-Inversion with projector.py
+pip install scikit-image==0.19.3 ipython
 ```
-
+The last two packages are required by projector.py for GAN-Inversion
 ## Dataset
 
 ### Structure
