@@ -1,4 +1,5 @@
-# CTSVG: Conditional-Temporal-Style-Video-Generator
+# [Official] One Style is All You Need to Generate a Video
+This is the official pytorch implementation of our paper accepted in WACV 2024.
 
 ## Changing emotion mid sequence
 
@@ -24,7 +25,7 @@ pip install opencv-python tqdm pandas
 pip install scikit-image==0.19.3 ipython
 ```
 The last two packages are required by projector.py for GAN-Inversion. 
-Checkout the requirements.txt file to see the complete list of python packages with which the project scripts were last tested successfully.
+Checkout the requirements.yml file to see the complete list of python packages with which the project scripts were last tested successfully.
 ## Dataset
 
 ### Structure
