@@ -102,7 +102,7 @@ RAVDESS
 - [UTD-MHAD](https://personal.utdallas.edu/~kehtar/UTD-MHAD.html)
 
 ### Checkpoints
-| Dataset | frame res    | latent dim| t2v components | training iterations | links |
+| Dataset | frame resolution    | latent dim| t2v components | training iterations | links |
 | :---:   | :---: 	| :---: 	|   :---: 	     |:---: 	           |:---:  |
 | MEAD    |   256x256  	|    256   	|   128          |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz256_latent256_dyn128_120k.pt?download=1)      |
 | MEAD    |   128x128  	|    256   	|   128          |     117k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz128_latent256_dyn128_117k.pt?download=1)      |
@@ -127,3 +127,9 @@ python generate.py --ckpt ./ckpt/XXXXX.pt --savepath ./sample/ --num_classes 8 -
 ```
 python projector.py ./ckpt/XXXXX.pt --step 200 --nframes 60 --num_person 30 --num_classes 8 --maindir ./inp/ --outputdir ./output/ --latent 256 --dyn_size 128 --re_person 7 --re_label 4 
 ```
+## Acknowledgement
+The coding pipeline has been burrowed from
+https://github.com/rosinality/stylegan2-pytorch
+
+Therefore, please refer to https://github.com/NVlabs/stylegan2 for Cuda kernel licensing,
+and https://github.com/richzhang/PerceptualSimilarity for LPIPS package.
