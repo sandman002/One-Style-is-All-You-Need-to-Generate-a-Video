@@ -102,12 +102,12 @@ RAVDESS
 - [UTD-MHAD](https://personal.utdallas.edu/~kehtar/UTD-MHAD.html)
 
 ### Checkpoints
-| Dataset | SIZE    | latent dim| t2v components | training iterations | links |
+| Dataset | frame res    | latent dim| t2v components | training iterations | links |
 | :---:   | :---: 	| :---: 	|   :---: 	     |:---: 	           |:---:  |
-| MEAD    |   256  	|    256   	|   128          |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz256_latent256_dyn128_120k.pt?download=1)      |
-| MEAD    |   128  	|    256   	|   128          |     117k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz128_latent256_dyn128_117k.pt?download=1)      |
-| MEAD    |   128  	|    128   	|   64           |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz128_latent128_dyn64_120k.pt?download=1)       |   
-| RAVDESS |   128  	|    128   	|   64           |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/RAVDESS_sz128_latent128_dyn64_120kv.pt?download=1)   | 
+| MEAD    |   256x256  	|    256   	|   128          |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz256_latent256_dyn128_120k.pt?download=1)      |
+| MEAD    |   128x128  	|    256   	|   128          |     117k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz128_latent256_dyn128_117k.pt?download=1)      |
+| MEAD    |   128x128  	|    128   	|   64           |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/mead_sz128_latent128_dyn64_120k.pt?download=1)       |   
+| RAVDESS |   128x128  	|    128   	|   64           |     120k            |[external zenodo link](https://zenodo.org/record/7930268/files/RAVDESS_sz128_latent128_dyn64_120kv.pt?download=1)   | 
 ## Training
 ```
 python train.py --chkpath ./ckpt/ --samplepath ./sample/ --batch 16 --size 128 --dyn_size 256 --latent 320 --traindata_csv ./datasets/mead_train.csv
