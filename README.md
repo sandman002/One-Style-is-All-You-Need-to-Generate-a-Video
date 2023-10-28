@@ -1,6 +1,8 @@
-# [Official] One Style is All You Need to Generate a Video
-This is the official pytorch implementation of our paper accepted in WACV 2024.
+# One Style is All You Need to Generate a Video
 
+### [Project Page](https://sandman002.github.io/CTSVG/) | [Paper](Coming Soon) | [Video](https://youtu.be/bsMazroFH6k)
+
+This is the official pytorch implementation of our paper accepted in WACV 2024.
 ## Changing emotion mid sequence
 
 ![alt text](./anim/emotion_chain.gif)
@@ -134,3 +136,13 @@ https://github.com/rosinality/stylegan2-pytorch
 
 Therefore, please refer to https://github.com/NVlabs/stylegan2 for Cuda kernel licensing,
 and https://github.com/richzhang/PerceptualSimilarity for LPIPS package.
+
+### Citation
+```
+@inproceedings{
+  title = {One Style is All You Need to Generate a Video},
+  author = {Sandeep Manandhar and Auguste Genovesio},
+  booktitle = {Proceedings of the {Winter Conference on Applications of Computer Vision (WACV)}},
+  year = {2024},
+}
+```
