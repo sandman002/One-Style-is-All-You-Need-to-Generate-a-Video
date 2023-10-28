@@ -10,7 +10,7 @@ This is the official pytorch implementation of our paper accepted in WACV 2024.
 
 <img src="./anim/inv_pivotal.gif" alt="drawing" width="500"/>
 
-## Video Reenactments
+## Temporal GAN Inversion to Reenactment
 
 <img src="./anim/reenact.gif" alt="drawing" width="500"/>
 
@@ -103,9 +103,7 @@ RAVDESS
 ```
 
 ### Dataset download
-- [MEAD](https://wywu.github.io/projects/MEAD/MEAD.html)  
-- [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio)
-- [UTD-MHAD](https://personal.utdallas.edu/~kehtar/UTD-MHAD.html)
+[MEAD](https://wywu.github.io/projects/MEAD/MEAD.html) | [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio) | [UTD-MHAD](https://personal.utdallas.edu/~kehtar/UTD-MHAD.html)
 
 ### Checkpoints
 | Dataset | frame resolution    | latent dim| t2v components | training iterations | links |
@@ -129,16 +127,17 @@ python train.py --ckpt ./ckpt/XXXXX.pt --chkpath ./ckpt/ --samplepath ./sample/ 
 ```
 python generate.py --ckpt ./ckpt/XXXXX.pt --savepath ./sample/ --num_classes 8 --num_person 30 --frames 120 --latent 256 --dyn_size 128 --personlist 19 20 1 --actlist 0 3 1
 ```
-## GAN-Inversion
+## Temporal GAN Inversion
 ```
 python projector.py ./ckpt/XXXXX.pt --step 200 --nframes 60 --num_person 30 --num_classes 8 --maindir ./inp/ --outputdir ./output/ --latent 256 --dyn_size 128 --re_person 7 --re_label 4 
 ```
 ## Acknowledgement
 The coding pipeline has been burrowed from
-https://github.com/rosinality/stylegan2-pytorch
-
-Therefore, please refer to https://github.com/NVlabs/stylegan2 for Cuda kernel licensing,
+https://github.com/rosinality/stylegan2-pytorch .
+Please refer to https://github.com/NVlabs/stylegan2 for CUDA kernel licensing,
 and https://github.com/richzhang/PerceptualSimilarity for LPIPS package.
+
+The benchmarking on action classification was done using [PoseC3D](https://arxiv.org/abs/2104.13586) implemented in https://github.com/open-mmlab .
 
 ### Citation
 ```
