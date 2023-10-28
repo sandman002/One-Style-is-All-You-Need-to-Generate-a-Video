@@ -4,12 +4,15 @@
 
 This is the official pytorch implementation of our paper accepted in WACV 2024.
 ## Changing emotion mid sequence
+<img src="./anim/emotion_chain.gif" alt="drawing" width="500"/>
 
-![alt text](./anim/emotion_chain.gif)
+## Temporal GAN Inversion and Pivotal Tuning
 
-## Gan inversion of motion styles
+<img src="./anim/inv_pivotal.gif" alt="drawing" width="500"/>
 
-![alt text](./anim/fake_projected.gif)
+## Video Reenactments
+
+<img src="./anim/reenact.gif" alt="drawing" width="500"/>
 
 ## Requirements
 - Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-91-generic x86_64)
