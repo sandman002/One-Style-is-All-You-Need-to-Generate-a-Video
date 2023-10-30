@@ -1,6 +1,6 @@
 # One Style is All You Need to Generate a Video
 
-### [Project Page](https://sandman002.github.io/CTSVG/) | [arXiv](Coming Soon) | [Video](https://youtu.be/bsMazroFH6k)
+### [Project Page](https://sandman002.github.io/CTSVG/) | [arXiv](https://arxiv.org/abs/2310.17835) | [Video](https://youtu.be/bsMazroFH6k)
 
 This is the official pytorch implementation of our paper accepted in WACV 2024.
 ## Changing emotion mid sequence
